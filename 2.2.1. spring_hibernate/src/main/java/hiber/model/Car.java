@@ -60,7 +60,6 @@ public class Car implements Serializable {
         this.user = user;
     }
 
-
     @Override
     public String toString() {
         return "Car{" +

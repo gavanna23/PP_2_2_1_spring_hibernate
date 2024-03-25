@@ -12,19 +12,11 @@ import java.util.List;
 @Repository
 public class CarDaoImp implements CarDao {
 
-   @Autowired
-   private SessionFactory sessionFactory;
+    @Autowired
+    private SessionFactory sessionFactory;
 
-   @Override
-   public void add(Car car) {
-      sessionFactory.getCurrentSession().save(car);
-   }
-
-//   @Override
-//   @SuppressWarnings("unchecked")
-//   public List<Car> listCar() {
-//      TypedQuery<Car> query=sessionFactory.getCurrentSession().createQuery("from Car");
-//      return query.getResultList();
-//   }
-
+    @Override
+    public void add(Car car) {
+        sessionFactory.getCurrentSession().save(car);
+    }
 }
